@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Kevin Luo's User Page</title>
     <style>
       table, th, td {
-        border: 1px solid black;
+        border-style: solid;
+        border-width: 2px;
+        border-color: hsl(117, 34%, 16%)
       }
       </style>
   </head>
   <body>
-      <h1 style="color:rgb(71, 22, 204);background-color:rgb(155, 228, 224);">Kevin Luo's User Page</h1>
-      <img src="images/profilePicture.png" width="200" alt="Profile Picture">
-      <div>
-        <p>Hi, I'm <i>Kevin</i>, a third year student pursuing a BS in Computer Science at UCSD.</p>
-        <p>I am most interested and experienced in back-end development and working with API's, but I am learning front-end development tools such as React, HTML, and CSS.</p>
-        <a href="https://github.com/kevinyluo">view my github profile</a>
+      <h1 target="_header" style="color:rgb(71, 22, 204);background-color:rgba(155, 228, 224, 0.5);">Kevin Luo's User Page</h1>
+      <div id="grid">
+        <p class="col-2">Hi, I'm <i>Kevin</i>, a third year student pursuing a BS in Computer Science at UCSD. </p>
+        <span class="col-3">
+          <img src="images/profilePicture.png" width="200" alt="Profile Picture">
+        </span>
+        <p class="col-4">I am most interested and experienced in back-end development and working with API's, but I am learning front-end development tools such as React, HTML, and CSS.<a class="block" href="https://github.com/kevinyluo">view my github profile</a></p>
+        
       </div>
       <br>
       <div>
@@ -26,19 +31,26 @@
             <th>Description</th>
           </tr>
           <tr>
-            <td><a href="https://github.com/kevinyluo/BlockWorld">Block World</a></td>
+            <td>Block World</td>
             <td>Interactive graphics world using WebGL</td>
           </tr>
           <tr>
-            <td><a href="https://github.com/nachiketingle/same_home_diff_hacks/tree/backend">IDK</a></td>
+            <td>IDK</td>
             <td>Mobile decision making app</td>
           </tr>
           <tr>
-            <td><a href="https://github.com/kevinyluo/graphs">Graph Visualizer</a></td>
+            <td>Graph Visualizer</td>
             <td>React website</td>
           </tr>
         </table>
       </div>
+
+      <div class="flex-container">
+        <div><a class="inline" href="https://github.com/kevinyluo/BlockWorld">Block World</a></div>
+        <div><a href="https://github.com/nachiketingle/same_home_diff_hacks/tree/backend">IDK</a></div>
+        <div><a href="https://github.com/kevinyluo/graphs">Graph Visualizer</a></div>  
+      </div>
+
       <br>
       <div>
         <b>Add a comment!</b>

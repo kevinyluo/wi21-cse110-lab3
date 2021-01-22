@@ -1,0 +1,81 @@
+* {
+}
+
+@media only screen and (min-width: 600px) {
+body {
+  background-color: rgb(224, 224, 224);
+  margin-top: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 600px) {
+h1[target="_header"] {
+  text-align: center;
+  position: static;
+  font-family: "Lobster", cursive;
+  text-decoration: underline;
+}
+
+/*CSS for the grid at the top of the webpage*/
+#grid {
+  position: relative;
+  left: 20px;
+  display: grid;
+  grid-template-columns: 20% 150px auto 150px 20%;
+  justify-items: center;
+  grid-template-areas: "header header header header header";
+}
+
+a.block {
+  display:block;
+}
+
+a.inline{
+  display:inline;
+}
+
+.col-2 {
+  grid-column: 2;
+}
+
+.col-3 {
+  grid-column: 3;
+}
+
+.col-4 {
+  grid-column: 4;
+}
+
+.flex-container {
+  min-width: 50px;
+  max-width: 80%;
+  margin: 25px 100px 25px 100px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  background-color: rgb(158, 159, 161);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px 20px 20px 20px;
+  font-size: 1em;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: rgb(0, 255, 115);
+}
